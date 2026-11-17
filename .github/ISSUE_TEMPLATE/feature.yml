@@ -1,0 +1,21 @@
+name: Idea
+description: Something you'd like Batchabox to do.
+labels: [idea]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The job, not the button. What's in the way today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      multiple: true
+      options: [Mac, Linux desktop, Windows, Linux server, iPhone and iPad]

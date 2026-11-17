@@ -1,0 +1,48 @@
+name: Bug
+description: Something doesn't work the way it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Leave out passwords, keys, connection strings and real database rows.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you saw. A screenshot helps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to get there
+      placeholder: |
+        1. open a workspace
+        2. ...
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      multiple: true
+      options: [Mac, Linux desktop, Windows, Linux server, iPhone and iPad]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: On the Mac it's in Settings → Updates. Add the macOS or iOS version too.
+      placeholder: 0.2.0, macOS 26.1
+    validations:
+      required: true
+  - type: dropdown
+    id: reach
+    attributes:
+      label: How the device reaches the box
+      options: [Same computer, Same network, VPN, BatchaboxRelay, Not sure]

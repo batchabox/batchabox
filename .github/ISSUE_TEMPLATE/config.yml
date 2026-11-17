@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Docs
+    url: https://batchabox.app/docs
+    about: Install, pairing, the relay and how each card works.
+  - name: A security problem
+    url: https://github.com/batchabox/batchabox/security/advisories/new
+    about: Report it privately, never as a public issue.
+  - name: Email
+    url: mailto:box@batchabox.app
+    about: Anything that shouldn't be public.
